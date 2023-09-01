@@ -16,7 +16,7 @@
             }
             stage('Test') {
                 steps {
-                    sh 'pip install streamlit --user'
+                    sh 'streamlit run app.py'
                 }
             }
             stage('Deploy') { 
