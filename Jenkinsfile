@@ -10,13 +10,13 @@
                 steps {
                     sh 'python3 --version'
  		    sh 'pip --version'
-   		    sh 'pip install --upgrade pip'
-		    sh 'pip --version'                 
+   		   
+		                    
                 }
             }
             stage('Test') {
                 steps {
-                    sh 'pip install streamlit'
+                    sh 'pip install streamlit --user'
                 }
             }
             stage('Deploy') { 
