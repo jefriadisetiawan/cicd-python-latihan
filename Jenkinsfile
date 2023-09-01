@@ -10,7 +10,7 @@
                 steps {
                     sh 'python3 --version'
  		    sh 'pip --version'
-   		   
+  		    sh 'pip install streamlit' 		   
 		                    
                 }
             }
