@@ -15,7 +15,7 @@
             }
             stage('Test') {
                 steps {
-                    sh 'streamlit hello'
+                    sh 'pip install streamlit'
                 }
             }
             stage('Deploy') { 
