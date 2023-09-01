@@ -10,7 +10,8 @@
                 steps {
                     sh 'python3 --version'
  		    sh 'pip --version'
-                    
+   		    sh 'pip install --upgrade pip'
+		    sh 'pip --version'                 
                 }
             }
             stage('Test') {
