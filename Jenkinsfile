@@ -2,7 +2,7 @@
         agent {
             docker {
                 image 'python:3.8-bullseye'
-                args '-p '8501:8501'
+                args '-p 8501:8501'
             }
         }
         stages {
