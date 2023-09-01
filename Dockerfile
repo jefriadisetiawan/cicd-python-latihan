@@ -9,5 +9,4 @@
       $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
     RUN apt-get update && apt-get install -y docker-ce-cli
     WORKDIR /app-st
-    EXPOSE 8501
     RUN jenkins-plugin-cli --plugins "blueocean:1.25.5 docker-workflow:1.28"
